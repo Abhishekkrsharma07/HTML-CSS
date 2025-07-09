@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+    <h1>My E-commerce Store</h1>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">Sign in</a>
+    <a href="#">Product detail</a>
+
+    </div>
+    <nav>
+      <button onclick="viewCart()">Cart (<span id="cart-count">0</span>)</button>
+      <button onclick="viewWatchLater()">Watch Later (<span id="watch-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+        <button onclick="addToWatchLater('Product 1')">Watch Later</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+        <button onclick="addToWatchLater('Product 2')">Watch Later</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Product 3')">Add to Cart</button>
+        <button onclick="addToWatchLater('Product 3')">Watch Later</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us: contact@store.com | &copy; 2025 My E-commerce Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
